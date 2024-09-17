@@ -1,0 +1,8 @@
+[package]
+name = "owasp_password_validator"
+version = "0.1.0"
+edition = "2021"
+description = "A password validator based on OWASP guidelines"
+license = "MIT"
+repository = "https://github.com/chriswk/owasp_password_validator"
+[dependencies]
