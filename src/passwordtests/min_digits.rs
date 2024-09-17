@@ -6,7 +6,7 @@ pub struct MinDigits {
 
 impl PasswordTest for MinDigits {
     fn test(&self, password: &str) -> Result<(), String> {
-        if password.chars().filter(|f| f.is_digit(10)).count() < self.min_digits {
+        if password.chars().filter(|f| f.is_ascii_digit()).count() < self.min_digits {
             Err(format!(
                 "Password must contain at least {} digits",
                 self.min_digits
